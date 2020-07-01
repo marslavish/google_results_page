@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+/** HEADER */
+.search-header {
+    display: flex;
+    align-items: center;
+}
+#google-logo {
+    align-self: flex-start;
+    width: 110px;
+    margin: 10px 30px 0 20px;
+}
+/* Todo Scroll down with fixed position */
+.search-bar {
+    position: relative;
+}
+/* Todo Set proper input starting point */
+#google-search-bar {
+    width: 700px;
+    height: 46px;
+    border-top-left-radius: 23px;
+    border-top-right-radius: 23px;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+    border: 1px solid #e1e2e6;
+}
+#google-search-bar:hover {
+    box-shadow: 0 1px 2px 1px #e1e2e6;
+}
+#microphone {
+    position: absolute;
+    right: 3.5em;
+    top: 5px;
+}
+#search-icon {
+    position: absolute;
+    right: 1em;
+    top: 7px;
+}
+#google-menu {
+    margin-left: auto;
+    margin-right: 1em;  
+}
+#google-menu img {
+    border: 7px solid white;
+}
+#google-menu img:hover {
+    border: 7px solid #e1e2e6;
+    border-radius: 50%;
+}
+#google-account img{
+    margin-right: 1em;
+    border: 3px solid white;
+}
+#google-account img:hover {
+    border: 3px solid #e1e2e6;
+    border-radius: 50%;
+}
+
+.top-nav {
+    position: relative;
+}
+.top-nav ul {
+    position: relative;
+    top: -20px;
+    margin-left: 160px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+}
+.top-nav li {
+    list-style: none;
+    padding: 1em;
+}
+.top-nav a {
+    text-decoration: none;
+    color: #5f6268;
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 400;
+}
+.top-nav img {
+    float: left;
+}
+.top-nav li:first-child a:first-child {
+    color: #1d74e8;
+}
+#last-second-item {
+    margin-left: 40px;
+}
+.navigation-line {
+    position: relative;
+    top: -23px;
+    width: 55px;
+    border: 2px solid #1a72e8;
+    margin-left: 166px;
+}
+.horizontal-line {
+    position: relative;
+    top: -25px;
+    border-top: 1px solid rgba(235,235,235, 0.25);
+}
+
+/** MAIN */
+main {
+    margin-left: 160px;
+    position: relative;
+    top: -25px;
+}
+main > p:first-child {
+    color: #70757a;
+    font-size: 14px;
+    line-height: 43px;
+    font-weight: 400;
+    margin-left: 16px;
+}
+.search-results {
+    position: relative;
+    top: -10px;
+    font-size: 14px;
+    line-height: 20px;
+    color: #202124;
+    font-weight: 400;
+    padding: 18px;
+    width: 650px;
+}
+.search-results a {
+    text-decoration: none;
+    color:#202124;
+}
+h1 {
+    color: #1a0dab;
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.search-results > p {
+    line-height: 20px;
+}
+/* Todo Make color of h1 #761ba4 if visited*/
+.visited-link:link h1 {
+    color: #761ba4;
+}
+h1:hover {
+    text-decoration: underline;
+}
+
+.related-searches {
+    margin-left: 18px;
+}
+h2 {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.related-searches li {
+    list-style: none;
+    margin-bottom: 3px;
+}
+.related-searches a {
+    color: #190dab;
+    text-decoration: none;
+}
+.related-searches a:hover {
+    text-decoration: underline;
+}
+.related-searches img {
+    vertical-align: middle;
+    margin-right: 10px;
+}
+/* Todo Make search keywords bold */
+
+.bottom-search-pages{
+    margin-top: 20px;
+    margin-left: 160px;
+}
+.bottom-search-icon {
+    display: flex;
+    align-items: center;
+}
+.bottom-search-pages ul {
+    margin-left: 40px;
+}
+.bottom-search-pages li {
+    list-style: none;
+    display: inline-block;
+    padding: 3px;
+}
+.bottom-search-pages li a {
+    text-decoration: none;
+    color: #4285f4;
+}
+.bottom-search-pages li:last-child {
+    margin-left: 40px;
+}
+
+/** FOOTER */
+footer {
+    height: 65px;
+    width: 100%;
+    background: #f2f2f2;
+    padding-left: 180px;
+    border-top: 1px solid rgb(228,228,228);
+}
+/* Todo Make the icon before the text appear larger and with proper color */
+/* Todo Make location text bold */
+
+footer p {
+    font-size: 14px;
+    line-height: 15px;
+    color: #5f6368;
+}
+footer strong {
+    font-weight: bold;
+}
+footer p a {
+    text-decoration: none;
+    color: #5f6368;
+}
+footer p a:hover {
+    color: #52555b;
+}
+.bottom-nav li {
+    list-style: none;
+    display: inline-block;
+    margin-top: 10px;
+}
+.bottom-nav a {
+    text-decoration: none;
+    color: #5f6368;
+    font-size: 14px;
+    line-height: 40px;
+    padding-right: 22px;
+}
